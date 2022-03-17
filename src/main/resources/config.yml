@@ -5,7 +5,7 @@ permission: "chatblock.disable"
 
 # error message
 # Sorry, your message includes forbidden characters is default message which will also be used if this is empty string
-error-message: "Sorry, your message includes forbidden characters."
+error-message: "&4Sorry, your message includes forbidden characters."
 
 # list of unacceptable characters
 char-list:
