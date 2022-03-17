@@ -2,7 +2,9 @@
 # chatblock. disable is default permission which will also be used if this is empty string
 permission: "chatblock.disable"
 
+
 # error message
+# Sorry, your message includes forbidden characters is default message which will also be used if this is empty string
 error-message: "Sorry, your message includes forbidden characters."
 
 # list of unacceptable characters

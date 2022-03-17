@@ -19,7 +19,8 @@ public class ChatListener implements Listener {
         for (char c : main.getConfig().getCharacterList("char-list"))
             if(e.getMessage().contains(new StringBuilder(1).append(c))){
                 e.setCancelled(true);
-                e.getPlayer().sendMessage(ChatColor.DARK_RED + main.getConfig().getString("error-message"));
+                String error = main.getConfig().getString("error-message");
+                e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', error != null ? error : "&4Sorry, your message includes forbidden characters."));
                 return;
             }
     }
